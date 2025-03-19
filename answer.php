@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>The street program,in PHP</title>
+  <title>The street program, in PHP</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">The Street Program</span>
+        <span class="mdl-layout-title">The street program, in PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
@@ -30,30 +30,14 @@
         <img src="./images/notebook-animation.svg" alt="laptop image" width="250" />
       </div>
       <div class="page-content-php">
-        <form action="answer.php" method="GET">
-          <p>Street Number</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="number">
-            <label class="mdl-textfield__label" for="number-input">Street Number here ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          <br />
-          <p>Street Name</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" name="name">
-            <label class="mdl-textfield__label" for="name-input">Street Name here ...</label>
-          </div>
-          <br />
-          <!-- Accent-colored raised button with ripple -->
-          <button
-            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            type="submit">
-            Answer
-          </button>
-        </form>
-      </div>
-    </main>
-  </div>
-</body>
+        <div id="user-info">
+          <?php
+          $name = $_GET["name"];
+          $number = $_GET["number"];
 
-</html>
+          echo "<p>Your address is: " . $number . " " . $name . ".</p>";
+          ?>
+        </div>
+    </body>
+    </main>
+</body>
