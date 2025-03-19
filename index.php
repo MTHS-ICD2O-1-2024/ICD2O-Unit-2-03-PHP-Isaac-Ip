@@ -27,7 +27,7 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/notebook-animation.svg" alt="laptop image" width="250" />
+        <img src="./images/street.jpg" alt="street image" width="250" />
       </div>
       <div class="page-content-php">
         <form action="answer.php" method="GET">
