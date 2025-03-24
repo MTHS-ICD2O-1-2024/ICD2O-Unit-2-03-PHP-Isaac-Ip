@@ -51,6 +51,7 @@
             Enter
           </button>
         </form>
+        <a href="./index.php">Return ...</a>
       </div>
     </main>
   </div>
