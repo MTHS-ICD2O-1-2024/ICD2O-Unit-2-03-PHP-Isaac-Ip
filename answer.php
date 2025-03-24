@@ -37,7 +37,8 @@
 
           echo "<p>Your address is: " . $number . " " . $name . ".</p>";
           ?>
+          <a href="./index.php">Return ...</a>
         </div>
-    </body>
-    </main>
+</body>
+</main>
 </body>
